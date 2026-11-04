@@ -1,0 +1,144 @@
+/* =========================================
+   ОФОРМЛЕНИЕ: Гоночный минимализм
+   ========================================= */
+
+/* 1. Общий фон сайта (светло-серый) */
+body.bg-light {
+    background-color: #f4f4f4 !important;
+    color: #222;
+}
+
+/* 2. Шапка и Подвал (Глубокий черный) */
+header.bg-dark, 
+footer.bg-dark {
+    background-color: #151515 !important;
+    border-top: 1px solid #2a2a2a;
+}
+
+/* 3. Красные акценты (заменяем стандартный Bootstrap danger) */
+/* Кнопки */
+.btn-danger {
+    background-color: #e10600 !important;
+    border-color: #e10600 !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+.btn-danger:hover {
+    background-color: #b30500 !important;
+    border-color: #b30500 !important;
+    transform: translateY(-2px); /* Легкий подъем при наведении */
+    box-shadow: 0 4px 8px rgba(225, 6, 0, 0.3);
+}
+
+/* Контурные кнопки */
+.btn-outline-danger {
+    color: #e10600 !important;
+    border-color: #e10600 !important;
+    font-weight: 600;
+}
+.btn-outline-danger:hover {
+    background-color: #e10600 !important;
+    color: white !important;
+}
+
+/* Красные бейджи (например, "Скидка") */
+.badge.bg-danger {
+    background-color: #e10600 !important;
+    color: white;
+}
+
+/* 4. Навигация */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #e10600 !important;
+    font-weight: bold;
+    border-bottom: 2px solid #e10600;
+}
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffffff !important;
+}
+
+/* 5. Карточки направлений (белые с тенью при наведении) */
+section#popular .border.rounded {
+    border: 1px solid #dcdcdc !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+section#popular .border.rounded:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #e10600 !important; /* Рамка краснеет при наведении */
+}
+
+/* 6. Блок преимуществ */
+section .p-4.border.rounded {
+    transition: all 0.3s ease;
+}
+section .p-4.border.rounded:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-color: #bbb !important;
+}
+
+/* 7. Дополнительные утилиты */
+.placeholder-box {
+    min-height: 240px;
+    border: 2px dashed #ccc !important;
+    background-color: #eaeaea !important;
+}
+
+.placeholder-image {
+    min-height: 320px;
+}
+
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Делаем заголовки чуть более плотными */
+h1, h2, h3 {
+    letter-spacing: -0.5px;
+}
+/* =========================================
+   ЦВЕТА БЕЙДЖЕЙ (в стиле Гоночного минимализма)
+   ========================================= */
+
+/* "Новинка" (вместо зеленого - темно-серый, чтобы не отвлекать) */
+.badge.bg-success {
+    background-color: #333333 !important;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+/* "Хит" (вместо желтого - приглушенный белый/светло-серый) */
+.badge.bg-warning {
+    background-color: #f8f9fa !important;
+    color: #e10600 !important; /* Красный текст */
+    border: 1px solid #e10600; /* Красная рамка */
+}
+
+/* "Скидка" (оставляем красным, это главный акцент) */
+.badge.bg-danger {
+    background-color: #e10600 !important;
+    color: white;
+    border: 1px solid #e10600;
+}
+/* =========================================
+   БЛОК СОБЫТИЙ (Единый бело-красный стиль)
+   ========================================= */
+
+.alert {
+    background-color: #ffffff !important;
+    color: #111 !important;
+    border: 1px solid #e0e0e0 !important; /* Светло-серая рамка */
+    border-left: 5px solid #e10600 !important; /* Жирная красная полоса слева */
+    border-radius: 2px !important; /* Строгие углы */
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Легкая тень */
+}
+
+/* Выделяем жирный текст внутри красным цветом */
+.alert strong {
+    color: #e10600; 
+}
