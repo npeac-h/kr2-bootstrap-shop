@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Программа — RaceCraft Engineering</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light">
+
+  <!-- 1. ШАПКА (идентичная главной) -->
+  <header class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-8">
+          <h1 class="h3 mb-1">RaceCraft Engineering</h1>
+          <p class="mb-0 opacity-75">От идеи до подиума: растим инженеров гоночных машин</p>
+        </div>
+        <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+          <span class="badge bg-danger">КР №2</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. НАВИГАЦИЯ (активен пункт "Программа") -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-top border-secondary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">RaceCraft</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+              aria-expanded="false" aria-label="Переключить навигацию">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Программа</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Направление</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container my-5">
+
+    <!-- Информационный алерт -->
+    <div class="alert alert-info mb-4" role="alert">
+      Выберите учебный трек. Карточки оформлены компонентом Bootstrap <code>card</code>.
+    </div>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="mb-0">Учебные треки</h2>
+      <a class="btn btn-outline-danger" href="order.html">Оставить заявку</a>
+    </div>
+
+    <!-- 3. СЕТКА КАРТОЧЕК (треки) -->
+    <div class="row g-4">
+
+      <!-- Карточка 1 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 bg-white">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h3 class="card-title h5">Базовый курс</h3>
+              <span class="badge bg-success">Старт</span>
+            </div>
+            <p class="card-text text-muted">3 месяца · 4 модуля · очный/гибридный.</p>
+            <p class="fw-bold fs-5 mt-auto mb-3">40 000 ₽</p>
+            <div class="d-flex gap-2 mt-auto">
+              <a class="btn btn-danger flex-grow-1" href="product.html">Подробнее</a>
+              <button class="btn btn-outline-danger flex-grow-1" type="button"
+                      data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 bg-white">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h3 class="card-title h5">Продвинутый курс</h3>
+              <span class="badge bg-warning text-dark">Хит</span>
+            </div>
+            <p class="card-text text-muted">6 месяцев · 6 модулей · гибридный формат.</p>
+            <p class="fw-bold fs-5 mt-auto mb-3">65 000 ₽</p>
+            <div class="d-flex gap-2 mt-auto">
+              <a class="btn btn-danger flex-grow-1" href="product.html">Подробнее</a>
+              <button class="btn btn-outline-danger flex-grow-1" type="button"
+                      data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 bg-white">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-start mb-3">
+              <h3 class="card-title h5">Проектная мастерская</h3>
+              <span class="badge bg-danger">Интенсив</span>
+            </div>
+            <p class="card-text text-muted">4 месяца · проект в команде · портфолио.</p>
+            <p class="fw-bold fs-5 mt-auto mb-3">50 000 ₽</p>
+            <div class="d-flex gap-2 mt-auto">
+              <a class="btn btn-danger flex-grow-1" href="product.html">Подробнее</a>
+              <button class="btn btn-outline-danger flex-grow-1" type="button"
+                      data-bs-toggle="modal" data-bs-target="#orderModal">Заказать</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. ТАБЛИЦА ДОСТИЖЕНИЙ -->
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Достижения выпускников</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle bg-white">
+          <caption class="text-muted">Топ-10 проектов месяца</caption>
+          <thead class="table-dark">
+            <tr><th scope="col">Проект</th><th scope="col">Направление</th><th scope="col">Результат</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Активное крыло</td><td>Аэродинамика</td><td>1 место в студенческом чемпионате</td></tr>
+            <tr><td>Телеметрия подвески</td><td>Электроника</td><td>Публикация в сборнике</td></tr>
+            <tr><td>Турбонаддув</td><td>Двигатели</td><td>Патент на полезную модель</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. FAQ (Accordion) -->
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Частые вопросы</h2>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+              Нужна ли базовая подготовка?
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Достаточно школьной физики и математики.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+              Нужен ли опыт в автоспорте?
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Нет, программа рассчитана на начинающих.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 6. МОДАЛЬНОЕ ОКНО -->
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-0 pb-0">
+          <h2 class="modal-title h5" id="orderModalLabel">Быстрая заявка</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted">Оставьте контактные данные — менеджер свяжется с вами.</p>
+          <form>
+            <div class="mb-3">
+              <label for="modal-name" class="form-label">Имя</label>
+              <input id="modal-name" type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="modal-phone" class="form-label">Телефон</label>
+              <input id="modal-phone" type="tel" class="form-control" required>
+            </div>
+            <div class="form-check mb-3">
+              <input id="modal-agree" class="form-check-input" type="checkbox" required>
+              <label class="form-check-label" for="modal-agree">Согласен на обработку данных</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-danger">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. ПОДВАЛ -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-0">&copy; 2026 RaceCraft Engineering. Учебный проект.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="text-white text-decoration-none me-3" href="catalog.html">Программа</a>
+          <a class="text-white text-decoration-none" href="order.html">Заявка</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

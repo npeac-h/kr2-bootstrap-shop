@@ -142,3 +142,32 @@ h1, h2, h3 {
 .alert strong {
     color: #e10600; 
 }
+/* =========================================
+   СТИЛИ ДЛЯ СТРАНИЦЫ ПРОГРАММЫ (catalog.html)
+   ========================================= */
+
+/* Карточки треков: эффект при наведении */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Аккордеон (FAQ): убираем синий цвет Bootstrap по умолчанию */
+.accordion-button:not(.collapsed) {
+    background-color: #fce8e8 !important; /* Светло-красный фон */
+    color: #e10600 !important; /* Красный текст */
+    box-shadow: none !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: #e10600 !important;
+}
+
+/* Таблица: делаем шапку строгой (темно-серой, почти черной) */
+.table-dark {
+    background-color: #151515 !important;
+    color: #ffffff;
+}
