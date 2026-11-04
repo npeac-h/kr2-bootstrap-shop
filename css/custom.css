@@ -59,7 +59,6 @@ footer.bg-dark {
     letter-spacing: 1px;
     color: #ffffff !important;
 }
-
 /* 5. Карточки направлений (белые с тенью при наведении) */
 section#popular .border.rounded {
     border: 1px solid #dcdcdc !important;
@@ -170,4 +169,40 @@ h1, h2, h3 {
 .table-dark {
     background-color: #151515 !important;
     color: #ffffff;
+}
+/* Подключение локального шрифта Ferro Rosso */
+@font-face {
+    font-family: 'Ferro Rosso';
+    src: url('fonts/ferro-rosso.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Стиль для логотипа */
+.navbar-brand {
+    font-family: 'Ferro Rosso', serif !important; /* Используем наш шрифт */
+    letter-spacing: 1px; 
+    font-size: 2rem !important; 
+    text-transform: none; /* Ferro Rosso лучше смотрится с маленькой буквы или как в оригинале */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #e10600 !important; 
+}
+/* =========================================
+   ВЕРХНИЙ ЛОГОТИП (В шапке)
+   ========================================= */
+.site-title {
+    font-family: 'Ferro Rosso', serif !important;
+    font-size: 2.5rem !important; /* Делаем его крупным */
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Легкая тень для объема */
+}
+
+/* Чтобы подзаголовок (слоган) не потерялся на фоне крутого шрифта, 
+   сделаем его чуть более разряженным и светлым */
+header p {
+    letter-spacing: 0.5px;
+    font-weight: 300;
 }
