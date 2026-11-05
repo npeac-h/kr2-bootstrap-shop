@@ -8,9 +8,8 @@ body.bg-light {
     color: #222;
 }
 
-/* 2. Шапка и Подвал (Глубокий черный) */
-header.bg-dark, 
-footer.bg-dark {
+/* 2. Шапка (Глубокий черный) */
+header.bg-dark {
     background-color: #151515 !important;
     border-top: 1px solid #2a2a2a;
 }
@@ -205,4 +204,57 @@ h1, h2, h3 {
 header p {
     letter-spacing: 0.5px;
     font-weight: 300;
+}
+/* Эффект для ссылок в подвале */
+.hover-danger:hover {
+    color: #e10600 !important;
+    transition: color 0.3s ease;
+}
+
+/* Кнопка в подвале */
+.btn.rounded-pill {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+/* Общие настройки подвала */
+footer .row {
+    padding-top: 20px;
+}
+
+/* Отступы для списка навигации */
+footer ul.list-unstyled {
+    padding-left: 0;
+}
+footer ul.list-unstyled li {
+    margin-bottom: 12px; /* Расстояние между ссылками */
+}
+
+/* Выравниваем правую колонку по правому краю (как на макете) */
+footer .col-md-6:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* На мобильных слева */
+}
+
+/* На десктопе (экраны от 768px) выравниваем правую колонку по правому краю */
+@media (min-width: 768px) {
+    footer .col-md-6:last-child {
+        align-items: flex-end; 
+        text-align: right; /* Текст справа */
+    }
+    footer .col-md-6:last-child .btn {
+        margin-top: 20px; /* Отступ для кнопки */
+    }
+}
+/* Стили для подвала */
+@media (min-width: 768px) {
+    footer .col-md-6:last-child {
+        padding-left: 40px; /* Отступ от левой колонки */
+    }
+}
+
+@media (max-width: 768px) {
+    footer .text-white-50 p {
+        justify-content: center !important; /* Центрируем на мобильных */
+    }
 }

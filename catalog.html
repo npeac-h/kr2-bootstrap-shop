@@ -13,12 +13,9 @@
   <header class="bg-dark text-white py-4">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-12 col-md-8">
+        <div class="col-12">
           <h1 class="h3 mb-1 site-title">RaceCraft Engineering</h1>
           <p class="mb-0 opacity-75">От идеи до подиума: растим инженеров гоночных машин</p>
-        </div>
-        <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
-          <span class="badge bg-danger">КР №2</span>
         </div>
       </div>
     </div>
@@ -38,7 +35,10 @@
           <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
           <li class="nav-item"><a class="nav-link active" aria-current="page" href="catalog.html">Программа</a></li>
           <li class="nav-item"><a class="nav-link" href="product.html">Направление</a></li>
-          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-danger" href="order.html">Подать заявку</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,7 +48,7 @@
 
     <!-- Информационный алерт -->
     <div class="alert alert-info mb-4" role="alert">
-      Выберите учебный трек. Карточки оформлены компонентом Bootstrap <code>card</code>.
+      Выберите учебный трек
     </div>
 
     <div class="d-flex justify-content-between align-items-center mb-4">
@@ -135,30 +135,84 @@
       </div>
     </section>
 
-    <!-- 5. FAQ (Accordion) -->
-    <section class="mt-5">
-      <h2 class="h4 mb-3">Частые вопросы</h2>
-      <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-              Нужна ли базовая подготовка?
-            </button>
-          </h3>
-          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Достаточно школьной физики и математики.</div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-              Нужен ли опыт в автоспорте?
-            </button>
-          </h3>
-          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">Нет, программа рассчитана на начинающих.</div>
+    <!-- БЛОК ЧАСТЫЕ ВОПРОСЫ (FAQ) -->
+    <section class="container my-5" id="faq">
+      <h2 class="text-center mb-4">Частые вопросы</h2>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          
+          <div class="accordion" id="faqAccordion">
+            
+            <!-- Вопрос 1 -->
+            <div class="accordion-item border-0 border-bottom">
+              <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Нужна ли базовая подготовка для поступления?
+                </button>
+              </h3>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Для базового курса требуется уверенное знание высшей математики и физики (разделы механики и термодинамики), а также базовые навыки черчения. Мы ждем студентов технических специальностей или выпускников инженерных классов. Для продвинутого курса обязательно прохождение вводного тестирования.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="accordion-item border-0 border-bottom">
+              <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Как проходят практические занятия?
+                </button>
+              </h3>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Практика составляет около 70% времени. Вы будете работать с реальной телеметрией, проводить CFD-расчеты, разбирать узлы гоночных двигателей и шасси на стендах. Наставники — действующие инженеры, которые разберут с вами реальные кейсы из автоспорта.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="accordion-item border-0 border-bottom">
+              <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Какая техника безопасности в мастерской?
+                </button>
+              </h3>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  В мастерской обязательно ношение закрытой обуви, защитных очков и спецодежды. Работа с высокотемпературными стендами, электрикой и станками требует строгого соблюдения регламента. Перед допуском к оборудованию все студенты проходят обязательный инструктаж.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 4 -->
+            <div class="accordion-item border-0 border-bottom">
+              <h3 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Помогаете ли вы с трудоустройством?
+                </button>
+              </h3>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Лучшие студенты получают приглашения на стажировки в команды-партнеры и могут участвовать в гоночных этапах. Портфолио, собранное из реальных инженерных расчетов и проектов, станет вашим главным преимуществом при трудоустройстве в автоспорте.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 5 -->
+            <div class="accordion-item border-0">
+              <h3 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Есть ли рассрочка или скидки?
+                </button>
+              </h3>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted">
+                  Да, для оплаты обучения доступна беспроцентная рассрочка. Также мы предоставляем стипендии победителям профильных инженерных олимпиад и скидку при раннем зачислении. Скидки суммируются для действующих членов гоночных клубов.
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -200,16 +254,85 @@
   </div>
 
   <!-- 7. ПОДВАЛ -->
-  <footer class="bg-dark text-white py-4 mt-5">
+  <footer class="bg-dark text-white pt-5 pb-4 mt-5 border-top border-danger border-3">
     <div class="container">
-      <div class="row align-items-center g-3">
-        <div class="col-12 col-md-6">
-          <p class="mb-0">&copy; 2026 RaceCraft Engineering. Учебный проект.</p>
+      <div class="row g-4">
+        
+        <!-- 1 КОЛОНКА: Логотип и описание (слева) -->
+        <div class="col-12 col-lg-5">
+          <h4 class="site-title text-white mb-3 fs-3">RaceCraft Engineering</h4>
+          <p class="text-white-50 mb-0 pe-lg-4" style="max-width: 350px;">
+            Программа развития инженеров спортивных автомобилей. От идеи до подиума.
+          </p>
         </div>
-        <div class="col-12 col-md-6 text-md-end">
-          <a class="text-white text-decoration-none me-3" href="catalog.html">Программа</a>
-          <a class="text-white text-decoration-none" href="order.html">Заявка</a>
+
+        <!-- 2 КОЛОНКА: Навигация (по центру) -->
+        <!-- pt-md-5 сдвигает её вниз, чтобы она начиналась на уровне "Связаться с нами" -->
+        <div class="col-6 col-md-3 col-lg-3 mt-5 mt-md-0 pt-md-5">
+          <h5 class="text-white mb-3 fw-bold text-uppercase" style="letter-spacing: 1px;">Навигация</h5>
+          <ul class="list-unstyled lh-lg mb-0">
+            <li><a href="index.html" class="text-white-50 text-decoration-none hover-danger">Главная</a></li>
+            <li><a href="catalog.html" class="text-white-50 text-decoration-none hover-danger">Программа</a></li>
+            <li><a href="product.html" class="text-white-50 text-decoration-none hover-danger">Направление</a></li>
+            <li><a href="contacts.html" class="text-white-50 text-decoration-none hover-danger">Контакты</a></li>
+          </ul>
         </div>
+
+       <!-- 3 КОЛОНКА: Контакты (справа) -->
+        <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0 pt-md-5 text-lg-end">
+          <h5 class="text-white mb-3 fw-bold text-uppercase" style="letter-spacing: 1px;">Связаться с нами</h5>
+          
+          <div class="mb-4 text-white-50">
+            <!-- Почта (Конверт) -->
+            <p class="mb-2 d-flex justify-content-lg-end align-items-center gap-2">
+              <a href="mailto:info@racecraft.ru" class="text-white-50 text-decoration-none hover-danger">
+                info@racecraft.ru
+              </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+              </svg>
+            </p>
+            
+            <!-- Телефон (Трубка) -->
+            <p class="mb-2 d-flex justify-content-lg-end align-items-center gap-2">
+              <a href="tel:+79000000000" class="text-white-50 text-decoration-none hover-danger">
+                +7 (900) 000-00-00
+              </a>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+            </p>
+            
+            <!-- Время (Часы) -->
+            <p class="mb-0 d-flex justify-content-lg-end align-items-center gap-2">
+              Ежедневно, 10:00–22:00
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+              </svg>
+            </p>
+          </div>
+
+          <div class="mb-4 text-white-50">
+            <!-- Адрес (Метка на карте) -->
+            <p class="mb-1 d-flex justify-content-lg-end align-items-center gap-2">
+              Москва, проспект Мира, 119
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg>
+            </p>
+            <p class="mb-0 d-flex justify-content-lg-end align-items-center gap-2">
+              ООО «РейсКрафт Инжиниринг»
+            </p>
+          </div>
+          
+          <a href="order.html" class="btn btn-danger rounded-pill px-4 mt-2">Подать заявку</a>
+        </div>
+
+      </div>
+
+      <hr class="border-secondary mt-5 mb-4">
+      <div class="text-center text-white-50">
+        <p class="mb-0">&copy; 2026 RaceCraft Engineering. Все права защищены.</p>
       </div>
     </div>
   </footer>
